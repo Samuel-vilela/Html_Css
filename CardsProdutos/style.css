@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: radial-gradient(circle at top, #27221c 0%, #12100e 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+}
+
+.vitrine-cards {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  align-items: center;
+}
+
+.card-produto {
+  width: 100%;
+  border-radius: 10px;
+  padding: 22px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
+}
+
+
+
+.card-dourado {
+  background-color: #d8b800;
+  color: #1a1506;
+  border: 2px solid rgba(255, 224, 115, 0.55);
+  box-shadow: 
+    0 25px 50px -12px rgba(0, 0, 0, 0.8),
+    inset 0 1px 1px rgba(255, 255, 255, 0.45);
+}
+
+
+.card-escuro {
+  background-color: #531007;
+  color: #f3f4f6;
+  border: 2px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 
+    0 22px 45px -12px rgba(0, 0, 0, 0.85),
+    inset 0 1px 1px rgba(255, 255, 255, 0.18);
+}
+
+
+.card-cobre {
+  background-color: #073153;
+  color: #fdf6f0;
+  border: 2px solid rgba(245, 179, 142, 0.32);
+  box-shadow: 
+    0 22px 45px -12px rgba(0, 0, 0, 0.85),
+    inset 0 1px 1px rgba(255, 255, 255, 0.25);
+}
+
+
+
+.cabecalho-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.titulo-card {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
+
+.edicao-card {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 8px;
+  letter-spacing: 0.06em;
+}
+
+.moldura-imagem {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.28);
+  margin-bottom: 16px;
+}
+
+.imagem-card {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.etiquetas {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.etiqueta-categoria,
+.etiqueta-destaque {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  padding: 5px 13px;
+  border-radius: 999px;
+}
+
+.divisoria-card {
+  border: none;
+  height: 1px;
+  background-color: #12100e;
+  margin-bottom: 16px;
+}
+
+.rodape-card {
+  display: flex;
+  align-items: center;
+}
+
+.bloco-preco {
+  display: flex;
+  flex-direction: column;
+}
+
+.rotulo-preco {
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 3px;
+}
+
+.valor-preco {
+  font-size: 1.65rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
